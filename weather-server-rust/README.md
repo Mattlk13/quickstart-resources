@@ -9,7 +9,7 @@ This example accompanies the [Build an MCP server](https://modelcontextprotocol.
 
 ## Prerequisites
 
-- Rust (stable) and Cargo
+- Rust 1.88+ and Cargo
 
 ## Build and run
 

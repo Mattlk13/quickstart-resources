@@ -17,9 +17,9 @@ Each example lives in its own directory with its own README covering prerequisit
 | Rust       | [`weather-server-rust`](./weather-server-rust)             | [`mcp-client-rust`](./mcp-client-rust)             |
 | Ruby       | [`weather-server-ruby`](./weather-server-ruby)             | [`mcp-client-ruby`](./mcp-client-ruby)             |
 
-All servers communicate over stdio and expose the same two tools: `get_forecast` and `get_alerts` (or `get-forecast` and `get-alerts` in TypeScript). 
+All servers communicate over stdio and expose the same two tools: `get_forecast` and `get_alerts` (or `get-forecast` and `get-alerts` in TypeScript).
 
-All clients accept a path to a server to launch, list its tools, and start an interactive chat loop in which Claude can call those tools. 
+All clients launch a server, list its tools, and start an interactive chat loop in which Claude can call those tools. The Python, TypeScript, and Ruby clients take a path to a server script; the Go and Rust clients take the command to run, plus any arguments.
 
 Note: These example clients need an `ANTHROPIC_API_KEY` to operate. Without a key, each client still connects and lists the server's tools before exiting, so you can verify the MCP wiring without credentials.
 
@@ -34,7 +34,7 @@ Each example only needs its own language toolchain. To work across the whole rep
 - **Node.js** 24+ and **npm**
 - **Python** 3.10+ and **uv**
 - **Go** 1.25+
-- **Rust** stable and **Cargo**
+- **Rust** 1.88+ and **Cargo**
 - **Ruby** 3.4+ and **Bundler**
 
 ## Running the tests
@@ -58,8 +58,7 @@ Contributions are welcome. To submit a change:
 A few conventions to follow, in line with the broader [Model Context Protocol contributing guidelines](https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/CONTRIBUTING.md):
 
 - **Keep documentation clear, concise, and technically accurate.** Include code examples where appropriate, and test the commands and links you add.
-- **Disclose AI assistance.** If you used any kind of AI assistance to prepare your contribution, say so in the pull request.
-- **Keep commit messages about the change**, not the tooling used to make it.
+- **Disclose AI assistance.** If you used any kind of AI assistance to prepare your contribution, say so in the pull request or issue. See [AI_POLICY.md](https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/AI_POLICY.md) for what the disclosure should cover.
 - **Be respectful.** This project follows the MCP community's [Code of Conduct](https://github.com/modelcontextprotocol/modelcontextprotocol/blob/main/CODE_OF_CONDUCT.md). Concerns can be reported to mcp-coc@anthropic.com.
 
 ## Security note
@@ -68,4 +67,4 @@ These examples are intentionally minimal. If you expose an MCP server over a net
 
 ## License
 
-This repository is licensed under the [MIT License](./LICENSE).
+The MCP project is transitioning from the MIT License to Apache-2.0. New code contributions are licensed under Apache-2.0, and documentation (excluding specifications) under CC-BY-4.0. Earlier contributions whose authors have not consented to relicensing remain under the MIT License. See [`LICENSE`](./LICENSE) for the full terms.
