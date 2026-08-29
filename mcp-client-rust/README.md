@@ -6,7 +6,7 @@ This example accompanies the [Build an MCP client](https://modelcontextprotocol.
 
 ## Prerequisites
 
-- Rust (stable) and Cargo
+- Rust 1.88+ and Cargo
 - An [Anthropic API key](https://console.anthropic.com/) (optional — see below)
 
 ## Setup

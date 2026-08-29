@@ -9,7 +9,7 @@ This example accompanies the [Build an MCP server](https://modelcontextprotocol.
 
 ## Prerequisites
 
-- Ruby 3.4+ (3.3 also satisfies the gems)
+- Ruby 3.4+
 - Bundler
 
 ## Setup and run
